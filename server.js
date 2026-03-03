@@ -57,10 +57,6 @@ app.get('/api/health', (_req, res) => {
   res.json({ ok: true });
 });
 
-app.get('/admin', (_req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
-});
-
 app.get('/api/categories', (_req, res) => {
   const store = loadStore();
   res.json(store.categories);

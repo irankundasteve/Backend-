@@ -5,8 +5,7 @@ A small full-stack JavaScript project with:
 - **Image uploads** (backend upload + frontend display)
 - **Category management** (create + rename categories)
 - **Image editing** (text overlays)
-- **Dedicated admin panel** for managing images and categories
-- **Public gallery** for viewing uploaded images
+- **Admin panel UI** (single-page interface to manage everything)
 
 ## Run locally
 
@@ -15,10 +14,7 @@ npm install
 npm start
 ```
 
-Open:
-
-- `http://localhost:3000/` for the public gallery
-- `http://localhost:3000/admin` (or `/admin.html`) for the admin panel
+Open `http://localhost:3000`.
 
 ## API overview
 

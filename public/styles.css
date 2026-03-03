@@ -24,16 +24,6 @@ header p {
   opacity: 0.9;
 }
 
-.admin-link {
-  display: inline-block;
-  margin-top: 0.75rem;
-  color: #fff;
-  background: #3659d9;
-  padding: 0.45rem 0.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
 .grid {
   display: grid;
   gap: 1rem;
