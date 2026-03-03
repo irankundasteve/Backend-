@@ -1,0 +1,14 @@
+{
+  "name": "minimal-image-management-system",
+  "version": "1.0.0",
+  "description": "Simple backend + frontend image management system with upload, categories, editing, and admin panel.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.5"
+  }
+}

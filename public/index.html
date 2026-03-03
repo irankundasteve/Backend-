@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Image Gallery</h1>
+      <p>Public view of uploaded images.</p>
+      <a class="admin-link" href="/admin.html">Go to Admin Panel</a>
+    </header>
+
+    <main class="grid">
+      <section class="panel full">
+        <h2>Browse Images</h2>
+        <div id="gallery" class="images"></div>
+      </section>
+    </main>
+
+    <template id="gallery-card-template">
+      <article class="card">
+        <img />
+        <h3 class="title"></h3>
+        <p class="meta"></p>
+      </article>
+    </template>
+
+    <script src="/main.js" defer></script>
+  </body>
+</html>
