@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Image Admin Panel</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Image Management Admin</h1>
+      <p>Upload images, manage categories, and add text overlays.</p>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <h2>Category Management</h2>
+        <form id="category-form">
+          <input id="category-name" type="text" placeholder="New category name" required />
+          <button type="submit">Add Category</button>
+        </form>
+        <ul id="category-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Upload Image</h2>
+        <form id="upload-form">
+          <input id="image-title" type="text" placeholder="Title" />
+          <select id="image-category" required></select>
+          <input id="image-file" type="file" accept="image/*" required />
+          <button type="submit">Upload</button>
+        </form>
+      </section>
+
+      <section class="panel full">
+        <h2>Images</h2>
+        <div id="images" class="images"></div>
+      </section>
+    </main>
+
+    <template id="image-card-template">
+      <article class="card">
+        <img />
+        <h3 class="title"></h3>
+        <p class="meta"></p>
+        <details>
+          <summary>Edit image text</summary>
+          <form class="edit-form">
+            <input name="text" type="text" placeholder="Overlay text" required />
+            <div class="row">
+              <input name="x" type="number" value="20" />
+              <input name="y" type="number" value="40" />
+              <input name="size" type="number" value="40" />
+              <input name="color" type="color" value="#ffffff" />
+            </div>
+            <button type="submit">Apply Edit</button>
+          </form>
+        </details>
+      </article>
+    </template>
+
+    <script src="/main.js" defer></script>
+  </body>
+</html>
